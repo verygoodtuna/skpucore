@@ -35,6 +35,10 @@ img {
     @include inner();
 }
 
+.h_inner {
+    @include h_inner();
+}
+
 .blind {
     position: absolute;
     clip: rect(0 0 0 0);

@@ -1,0 +1,26 @@
+.main_sk {
+    
+    .sk_slide {
+        .swiper-wrapper {
+            .swiper-slide {
+
+                .txt {
+                    @include inner();
+                    @include max-position_left();
+                }
+            }
+            .sk01 {
+                background: url(../imges/msk_01.png)no-repeat center center/cover;
+                height: 100vh;
+            }
+            .sk02 {
+                background: url(../imges/msk_02.png)no-repeat center center/cover;
+                height: 100vh;
+            }
+            .sk03 {
+                background: url(../imges/msk_03.png)no-repeat center center/cover;
+                height: 100vh;
+            }
+        }
+    }
+}

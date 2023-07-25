@@ -1,0 +1,65 @@
+.header {
+    height: 100px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 999;
+
+    .h_inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        h1 {
+            background: url(../imges/logo_w.svg)no-repeat center center/cover;
+            width: 130px;
+            height: 60px;
+        }
+
+        .gnb {
+
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+
+                li {
+                    a {
+                        line-height: 100px;
+                    }
+
+                    .lnb {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .cus {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            span {
+                a {
+                    line-height: 100px;
+                }
+            }
+
+            .lng {
+                span {
+                    a {
+                        line-height: 100px;
+                    }
+                }
+            }
+
+            ul {
+                display: none;
+            }
+        }
+    }
+}

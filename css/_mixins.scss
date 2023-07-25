@@ -1,4 +1,4 @@
-$size-pc : 1600px;
+$size-pc : 1200px;
 $size-gap : 30px;
 
 @mixin inner () {
@@ -7,9 +7,27 @@ $size-gap : 30px;
     padding: 0 $size-gap/2;
 }
 
+@mixin h_inner () {
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
 @mixin position_center () {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@mixin position_left () {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+@mixin max-position_left() {
+    @include inner();
+    @include position_center();
+    width: 1200px;
 }
