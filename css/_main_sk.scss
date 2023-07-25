@@ -7,6 +7,21 @@
                 .txt {
                     @include inner();
                     @include max-position_left();
+                    color: $color-white;
+
+                    h2 {
+                        font-size: 70px;
+                        font-weight: 700;
+                        line-height: 80px;
+                        margin: 0 0 20px 0;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        color: $color-white0;
+                    }
                 }
             }
             .sk01 {

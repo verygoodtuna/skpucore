@@ -1,4 +1,4 @@
-$size-pc : 1200px;
+$size-pc : 1400px;
 $size-gap : 30px;
 
 @mixin inner () {
@@ -29,5 +29,5 @@ $size-gap : 30px;
 @mixin max-position_left() {
     @include inner();
     @include position_center();
-    width: 1200px;
+    width: 1400px;
 }

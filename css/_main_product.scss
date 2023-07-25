@@ -1,0 +1,39 @@
+.main_product {
+    .inner {
+        .tit {
+
+        }
+    }
+    .product_slide {
+        height: 500px;
+
+        .p_slide {
+            height: 500px;
+        }
+
+        .p01 {
+            background: url(../imges/mp_01.png)no-repeat center center/cover;
+            height: 500px;
+        }
+
+        .p02 {
+            background: url(../imges/mp_02.png)no-repeat center center/cover;
+        }
+
+        .p03 {
+            background: url(../imges/mp_03.png)no-repeat center center/cover;
+        }
+
+        .p04 {
+            background: url(../imges/mp_04.png)no-repeat center center/cover;
+        }
+
+        .p05 {
+            background: url(../imges/mp_05.png)no-repeat center center/cover;
+        }
+
+        .p06 {
+            background: url(../imges/mp_06.png)no-repeat center center/cover;
+        }
+    }
+}

@@ -28,6 +28,10 @@
                 gap: 50px;
 
                 li {
+                    color: $color-white;
+                    font-size: 16px;
+                    font-weight: 500;
+
                     a {
                         line-height: 100px;
                     }
@@ -43,14 +47,26 @@
             display: flex;
             align-items: center;
             gap: 30px;
+
             span {
-                a {
+                    color: $color-white;
+                    font-size: 16px;
+                    font-weight: 500;
+
+                .inquiry {
                     line-height: 100px;
+                    padding: 8px 25px;
+                    border: 1px solid $color-white;
+                    border-radius: 50px;
                 }
             }
 
             .lng {
                 span {
+                    color: $color-white;
+                    font-size: 16px;
+                    font-weight: 500;
+
                     a {
                         line-height: 100px;
                     }
