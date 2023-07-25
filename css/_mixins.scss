@@ -1,0 +1,15 @@
+$size-pc : 1600px;
+$size-gap : 30px;
+
+@mixin inner () {
+    max-width: $size-pc;
+    margin: 0 auto;
+    padding: 0 $size-gap/2;
+}
+
+@mixin position_center () {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
