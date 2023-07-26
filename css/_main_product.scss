@@ -1,39 +1,161 @@
 .main_product {
     .inner {
         .tit {
+            display: flex;
+            justify-content: center;
+            //align-items: center;
+            margin: 0 0 100px 0;
+            gap: 100px;
 
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 47.5%;
+                transform: translate(-50%, -50%);
+
+                width: 1px;
+                height: 60px;
+                background: $color-fad;
+
+                z-index: 998;
+            }
+
+            h3 {
+                font-size: 60px;
+                font-weight: 700;
+                color: $color-dark;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 500;
+                color: $color-ldark;
+                line-height: 24px;
+            }
         }
     }
     .product_slide {
-        height: 500px;
 
-        .p_slide {
-            height: 500px;
+        .slick-active.slick-center .list .txt {
+            display: block;
         }
 
-        .p01 {
+        .p_slide {       
+            position: relative;
+
+            .list {
+                padding: 0 50px;
+
+                .txt {
+                    width: 100%;
+                    padding: 0 100px;
+    
+                    position: absolute;
+                    bottom: 50px;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+    
+                    display: none;
+                    //transition: 0.5s;
+    
+                    h4 {
+                        font-size: 50px;
+                        font-weight: 700;
+                        color: $color-white;
+    
+                        small {
+                            font-size: 26px;
+                        }
+                    }
+    
+                    span {
+                        
+                        a {
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                bottom: -5px;
+                                right: 100px;
+    
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                                background: $color-white;
+                            }
+    
+                            &::after {
+                                content: "\e907";
+                                position: absolute;
+                                bottom: -10px;
+                                right: 110px;
+                                transform: translate(0, -50%);
+                                font-family: xeicon;
+                                font-size: 30px;
+                                color: $color-dark;
+                                z-index: 998;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .bg01 {
             background: url(../imges/mp_01.png)no-repeat center center/cover;
-            height: 500px;
+            height: 400px;
         }
 
-        .p02 {
+        .bg02 {
             background: url(../imges/mp_02.png)no-repeat center center/cover;
+            height: 400px;
         }
 
-        .p03 {
+        .bg03 {
             background: url(../imges/mp_03.png)no-repeat center center/cover;
+            height: 400px;
         }
 
-        .p04 {
+        .bg04 {
             background: url(../imges/mp_04.png)no-repeat center center/cover;
+            height: 400px;
         }
 
-        .p05 {
+        .bg05 {
             background: url(../imges/mp_05.png)no-repeat center center/cover;
+            height: 400px;
         }
 
-        .p06 {
+        .bg06 {
             background: url(../imges/mp_06.png)no-repeat center center/cover;
+            height: 400px;
+        }
+    }
+
+    .slide_btn {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 60px;
+
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        i {
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 500;
+            color: $color-white0;
+            padding: 20px;
+            border: 1px solid $color-white0;
+            border-radius: 50%;
+            background: $color-header;
         }
     }
 }
