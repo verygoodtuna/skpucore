@@ -13,7 +13,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            background-color: rgba(0,0,0,.5);
+            background-color: $color-header;
             z-index: 1;
         }
 
@@ -27,12 +27,26 @@
         @include inner();
         @include position_center();
         z-index: 999;
-        top: 55%;
+        top: 52.5%;
 
         .tit {
             display: flex;
             align-items: center;
-            gap: 300px;
+            gap: 250px;
+
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 40%;
+                transform: translate(0, -50%);
+
+                width: 1px;
+                height: 150px;
+                background: $color-white0;
+            }
 
             h3 {
                 color: $color-white;

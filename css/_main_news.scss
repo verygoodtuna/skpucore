@@ -1,3 +1,89 @@
 .main_news {
+    .inner {
+        .txt {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin: 0 0 50px 0;
+
+            h3 {
+                font-size: 70px;
+                font-weight: 700;
+                color: $color-dark;
+            }
+
+            span {
+                cursor: pointer;
+
+                i {
+                    font-size: 26px;
+                    font-weight: 500;
+                    color: $color-white;
+                    background: $color-dark;
+                    padding: 10px;
+                    border-radius: 50%;
+
+                    &:hover {
+                        animation: rotate 0.5s;
+                    }
     
+                    @keyframes rotate{
+                        0% {
+                            transform: rotate(0);
+                        }
+    
+                        100% {
+                            transform: rotate(360deg);
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        .news_box {
+
+            ul {
+               
+
+                li {
+                    padding: 50px 0;
+                    border-bottom: 1px solid $color-white0;
+
+                    a {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 50px;
+
+                        span {
+                           font-size: 26px;
+                           font-weight: 500;
+                        }
+    
+                        .day {
+                            font-size: 32px;
+                            font-weight: 700;
+                            color: $color-top;
+                        }
+    
+                        .data {
+                            width: 100%;
+                            font-weight: 700;
+                        }
+    
+                        .see {
+                            // text-align: right;
+                            // margin: 0 0 0 auto;
+                        }
+                    }
+                }
+
+                li:nth-child(1) {
+                    border-top: 1px solid $color-white0;
+                }
+            }
+        }
+    }
 }
