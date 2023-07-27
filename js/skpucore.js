@@ -1,7 +1,7 @@
 $(function () {
 
     $('.main_box').fullpage({
-       
+        responsiveWidth: 700,
     })
 
     const SkSlide = new Swiper ('.sk_slide', {

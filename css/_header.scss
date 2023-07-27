@@ -22,27 +22,88 @@
 
         .gnb {
 
+            &:hover .lnb {
+                //display: block;
+                //height: 200px;
+                top: 100px;
+                li {
+                    color: $color-white;
+                }
+                
+            }
+
+            &:hover::before {
+                //display: block;
+                height: 200px;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 100px;
+                left: 0;
+                right: 0;
+                height: 0;
+                background: $color-header;
+                overflow: hidden;
+
+                //display: none;
+                transition: 0.3s;
+            }
+
             ul {
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: center;
-                gap: 60px;
+                gap: 80px;
 
                 li {
                     color: $color-white;
                     font-size: 20px;
                     font-weight: 500;
+                    position: relative;
 
                     &:hover {
                         color: $color-yellow;
                     }
+
 
                     a {
                         line-height: 100px;
                     }
 
                     .lnb {
-                        display: none;
+                        //display: none;
+                        flex-direction: column;
+                        min-width: 150px;
+                        position: absolute;
+
+                        top: 100px;
+                        left: 0;
+                        gap: 0;
+                        padding: 25px 0;
+                        width: 100%;
+                        height: 200px;
+                        overflow: hidden;
+                        //display: none;
+                    
+                        li {
+                            font-size: 15px;
+                            font-weight: 400;
+                            text-align: left;
+                            width: 100%;
+                            line-height: 30px;
+                            color: transparent;
+
+                            &:hover {
+                                color: $color-yellow;
+                            }
+
+                            a{
+                                line-height: 20px;
+                            }
+                        }
                     }
                 }
             }

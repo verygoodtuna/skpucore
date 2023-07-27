@@ -1,0 +1,97 @@
+.footer {
+    padding: 50px 0;
+    background: $color-fbg;
+
+    .inner {
+        //height: 500px;
+        display: flex;
+        justify-content: space-between;
+        //align-items: center;
+        position: relative;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            transform: translate(0, -50%);
+
+            width: 1px;
+            height: 160px;
+            background: $color-ffa;
+        }
+
+        .company {
+            display: flex;
+            gap: 50px;
+
+            li {
+                font-size: 20px;
+                font-weight: 700;
+                color: $color-white0;
+
+                ul {
+                    padding: 15px 0;
+                    li {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        //color: $color-fli;
+                    }
+                }
+            }
+        }
+
+        .about {
+            .impormation {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                margin: 0 0 30px 0;
+
+                li {
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: $color-white0;
+                }
+            }
+
+            .family_box {
+                span {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $color-white0;
+                    background: $color-ffa;
+                    display: inline-block;
+                    padding: 10px 20px;
+                    //width: 153px;
+                    margin: 0 0 30px 0;
+
+                    i {
+                        margin: 0 0 0 10px;
+                    }
+                }
+
+                ul {
+                    display: none;
+                }
+            }
+
+            span {
+                display: block;
+                color: $color-fli;
+            }
+
+            .address {
+                font-size: 14px;
+                font-weight: 300;
+                margin: 0 0 5px 0;
+            }
+
+            .copy {
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+    }
+}
