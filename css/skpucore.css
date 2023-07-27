@@ -31,7 +31,7 @@ img {
 }
 
 .inner {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -123,10 +123,10 @@ img {
 }
 
 .main_sk .sk_slide .swiper-wrapper .swiper-slide .txt {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
   position: absolute;
@@ -307,7 +307,7 @@ img {
   height: 100%;
 }
 .main_technical .inner {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
   position: absolute;
@@ -471,7 +471,7 @@ img {
   width: 100%;
 }
 .main_global .inner {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
   position: absolute;
