@@ -864,7 +864,6 @@ img {
   width: 162.66px;
   height: 0;
   transform: translate(0, 0);
-  padding: 0 20px;
   background: #555555;
   z-index: 998;
   overflow: hidden;
@@ -872,12 +871,16 @@ img {
 }
 .footer .inner .about .family_box ul li {
   color: #dfdfdf;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.footer .inner .about .family_box ul li:hover {
+  background: #363636;
 }
 .footer .inner .about .family_box ul.on {
-  height: 140px;
-  padding: 10px 20px;
+  height: 180px;
 }
 .footer .inner .about span {
   display: block;
