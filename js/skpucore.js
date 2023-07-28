@@ -1,6 +1,7 @@
 $(function () {
 
     $('.main_box').fullpage({
+        anchors:['main_sk', 'main_product', 'main_technical', 'main_customer', 'main_news', 'main_global', 'footer'],
         responsiveWidth: 700,
         onLeave: function (idx, nidx, dir) {
             $('.gnb li').eq(nidx - 1).addClass('on').siblings().removeClass('on');
@@ -49,5 +50,9 @@ $(function () {
 
     $('.family_box span').on('click', function () {
         $('.family_box ul').toggleClass('on');
+    });
+
+    $('.header .cus .lng').on('click', function () {
+        $('.lng ul').toggleClass('on');
     })
 })

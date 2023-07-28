@@ -161,6 +161,10 @@ img {
   background: #EA002C;
   border: 1px solid transparent;
 }
+.header .h_inner .cus .lng {
+  position: relative;
+  cursor: pointer;
+}
 .header .h_inner .cus .lng span {
   color: #ffffff;
   font-size: 16px;
@@ -169,8 +173,26 @@ img {
 .header .h_inner .cus .lng span a {
   line-height: 100px;
 }
-.header .h_inner .cus ul {
+.header .h_inner .cus .lng ul {
   display: none;
+  position: absolute;
+  top: 30px;
+  left: -10px;
+  width: 60px;
+  padding: 8px 16px;
+  background: #dfdfdf;
+}
+.header .h_inner .cus .lng ul li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #363636;
+}
+.header .h_inner .cus .lng ul li ~ li {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.header .h_inner .cus .lng ul.on {
+  display: block;
 }
 
 .main_sk .sk_slide {
@@ -477,6 +499,7 @@ img {
 .main_technical .inner .tit {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 250px;
   position: relative;
 }
@@ -484,11 +507,11 @@ img {
   content: "";
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 53%;
   transform: translate(0, -50%);
   width: 1px;
   height: 150px;
-  background: #dfdfdf;
+  background: rgba(255, 255, 255, 0.5);
 }
 .main_technical .inner .tit h3 {
   color: #ffffff;
