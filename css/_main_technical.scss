@@ -72,6 +72,13 @@
                 border: 1px solid $color-white;
                 border-radius: 50px;
                 padding: 18px;
+
+                transition: 0.5s;
+
+                &:hover {
+                    background: $color-red;
+                    border: 1px solid transparent;
+                }
             }
         }
     }

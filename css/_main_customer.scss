@@ -26,10 +26,26 @@
                 font-weight: 400;
                 color: $color-dark;
 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    color: $color-white;
+
+                    a {
+                        background: $color-red;
+                    }
+                }
+
                 a {
                     padding: 15px 30px;
                     background: $color-white;
                     border-radius: 50px;
+
+                    i {
+                        margin: 0 0 0 10px;
+                    }
                 }
             }
         }

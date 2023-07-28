@@ -34,7 +34,7 @@
                         }
     
                         100% {
-                            transform: rotate(360deg);
+                            transform: rotate(180deg);
                         }
                     }
                     
@@ -71,11 +71,6 @@
                         .data {
                             width: 100%;
                             font-weight: 700;
-                        }
-    
-                        .see {
-                            // text-align: right;
-                            // margin: 0 0 0 auto;
                         }
                     }
                 }
