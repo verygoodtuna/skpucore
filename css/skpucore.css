@@ -229,7 +229,7 @@ img {
   width: 1400px;
   width: 1400px;
   top: 75%;
-  left: 21%;
+  left: 17%;
   width: auto;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid #ffffff;
@@ -354,9 +354,6 @@ img {
 }
 .main_product .product_slide .p_slide {
   position: relative;
-}
-.main_product .product_slide .p_slide .list {
-  padding: 0 50px;
 }
 .main_product .product_slide .p_slide .list .txt {
   width: 100%;

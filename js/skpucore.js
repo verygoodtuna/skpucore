@@ -36,7 +36,7 @@ $(function () {
         arrows: false,
         slidesToShow: 1,
         centerMode: true,
-        centerPadding: '640px',
+        centerPadding: '600px',
         infinite: true,
     })
 
