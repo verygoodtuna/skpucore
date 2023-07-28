@@ -354,6 +354,7 @@ img {
 }
 .main_product .product_slide .p_slide {
   position: relative;
+  padding: 0 50px;
 }
 .main_product .product_slide .p_slide .list .txt {
   width: 100%;
