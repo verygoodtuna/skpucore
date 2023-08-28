@@ -57,10 +57,10 @@ img {
   left: 0;
   right: 0;
   z-index: 999;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
 }
 .header.on {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
 }
 .header .h_inner {
   display: flex;
@@ -91,7 +91,7 @@ img {
   left: 0;
   right: 0;
   height: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   overflow: hidden;
   transition: 0.3s;
 }
@@ -195,6 +195,21 @@ img {
   display: block;
 }
 
+@media (max-width: 768px) {
+  .header {
+    height: 60px;
+  }
+  .header .h_inner {
+    height: 60px;
+  }
+  .header .h_inner h1 {
+    background: url(../imges/logo_w.svg) no-repeat center center;
+    height: 30px;
+  }
+  .header .h_inner .gnb {
+    display: none;
+  }
+}
 .main_sk .sk_slide {
   position: relative;
 }
@@ -378,6 +393,13 @@ img {
   position: relative;
   padding: 0 50px;
 }
+.main_product .product_slide .p_slide:hover .list .txt span a::before {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+}
+.main_product .product_slide .p_slide:hover .list .txt span a::after {
+  color: #363636;
+}
 .main_product .product_slide .p_slide .list .txt {
   width: 100%;
   padding: 0 100px;
@@ -393,7 +415,7 @@ img {
   color: #ffffff;
 }
 .main_product .product_slide .p_slide .list .txt h4 small {
-  font-size: 26px;
+  font-size: 20px;
 }
 .main_product .product_slide .p_slide .list .txt span a::before {
   content: "";
@@ -403,7 +425,9 @@ img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #ffffff;
+  background: transparent;
+  border: 1px solid #363636;
+  transition: 0.3s;
 }
 .main_product .product_slide .p_slide .list .txt span a::after {
   content: "\e907";
@@ -415,6 +439,13 @@ img {
   font-size: 30px;
   color: #363636;
   z-index: 998;
+  transition: 0.3s;
+}
+.main_product .product_slide .p_slide .list .txt span a:hover::before {
+  background: #ffffff;
+}
+.main_product .product_slide .p_slide .list .txt span a:hover::after {
+  color: #363636;
 }
 .main_product .product_slide .bg01 {
   background: url(../imges/mp_01.png) no-repeat center center/cover;
@@ -455,11 +486,10 @@ img {
   cursor: pointer;
   font-size: 20px;
   font-weight: 500;
-  color: #dfdfdf;
+  color: #363636;
   padding: 20px;
-  border: 1px solid #dfdfdf;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.1);
+  background: #ffffff;
 }
 
 .main_technical {
@@ -477,7 +507,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 .main_technical .video_box video {
@@ -565,21 +595,20 @@ img {
 .main_customer .inner .txt span {
   font-size: 20px;
   font-weight: 400;
-  color: #363636;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.main_customer .inner .txt span:hover {
-  color: #ffffff;
-}
-.main_customer .inner .txt span:hover a {
-  background: #EA002C;
-}
 .main_customer .inner .txt span a {
   padding: 15px 30px;
+  color: #363636;
   background: #ffffff;
   border-radius: 50px;
+  transition: 0.5s;
+}
+.main_customer .inner .txt span a:hover {
+  color: #ffffff;
+  background: #EA002C;
 }
 .main_customer .inner .txt span a i {
   margin: 0 0 0 10px;
@@ -730,10 +759,10 @@ img {
   justify-content: center;
   align-items: center;
   height: 40px;
+  background: transparent;
   position: absolute;
-  transition: 0.5s;
 }
-.main_global .link_box li :hover {
+.main_global .link_box li:hover a {
   background: #EA002C;
   border: 1px solid transparent;
 }
@@ -741,6 +770,7 @@ img {
   padding: 10px 20px;
   border: 1px solid #ffffff;
   border-radius: 50px;
+  transition: 0.5s;
 }
 .main_global .link_box li a i {
   font-size: 26px;

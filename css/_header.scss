@@ -184,3 +184,22 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .header {
+        height: 60px;
+
+        .h_inner {
+            height: 60px;
+            
+            h1 {
+                background: url(../imges/logo_w.svg)no-repeat center center;
+                height: 30px;
+            }
+
+            .gnb {
+                display: none;
+            } 
+        }
+    }
+}
