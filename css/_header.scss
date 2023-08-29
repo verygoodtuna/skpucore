@@ -18,6 +18,8 @@
         align-items: center;
         justify-content: space-between;
 
+        position: relative;
+
         h1 {
             background: url(../imges/logo_w.svg)no-repeat center center/cover;
             width: 130px;
@@ -30,6 +32,7 @@
                 display: block;
                 //height: 200px;
                 top: 100px;
+                height: 200px;
 
                 li {
                     color: $color-white;
@@ -55,7 +58,7 @@
                 overflow: hidden;
 
                 //display: none;
-                transition: 0.3s;
+                transition: 0.2s;
             }
 
             ul {
@@ -89,9 +92,10 @@
                         left: 0;
                         gap: 0;
                         padding: 25px 0;
+                        height: 0;
                         width: 100%;
                         overflow: hidden;
-                        transition: 0.5s;
+                        transition: 0.5s 1s;
                         display: none;
                     
                         li {
@@ -187,19 +191,71 @@
 
 @media (max-width: 768px) {
     .header {
-        height: 60px;
+        height: 80px;
+        z-index: 999;
 
         .h_inner {
-            height: 60px;
+            height: 80px;
+            padding: 0 20px;
+
+            z-index: 999;
             
             h1 {
                 background: url(../imges/logo_w.svg)no-repeat center center;
-                height: 30px;
+                height: 60px;
+                position: absolute;
+                top: 50%;
+                left: 20px;
+                transform: translate(0, -50%);
+
+                z-index: 999;
             }
 
             .gnb {
-                display: none;
+                display: block;
+
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+
+                width: 100%;
+                background: $color-dark;
+
+                &:hover::before {
+                    height: 0;
+                    top: 0;
+                    height: 0;
+                }
+
+                ul {
+                    flex-direction: column;
+                    gap: 50px;
+                    padding: 100px 0 0 0;
+
+                    li {
+                        a {
+                            line-height: 0;
+                        }
+
+                        .lnb {
+                            position: static;
+                            top: 0;
+                            left: 0;
+                            padding: 0;
+                        }
+
+                        .lnb.on {
+                            display: block;
+                        }
+                    }
+                }
             } 
+
+            .cus {
+                display: none;
+            }
         }
     }
 }

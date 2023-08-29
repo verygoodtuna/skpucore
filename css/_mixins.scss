@@ -17,7 +17,7 @@ $size-gap : 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1400px;
+    width: 100%;
 }
 
 @mixin position_left () {
@@ -30,5 +30,5 @@ $size-gap : 30px;
 @mixin max-position_left() {
     @include inner();
     @include position_center();
-    width: 1400px;
+    width: 100%;
 }

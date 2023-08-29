@@ -133,3 +133,16 @@
         }
     }
 }
+
+@media (max-width:768px) {
+    .footer {
+        .inner {
+            flex-direction: column;
+            padding: 0 20px;
+
+            .company {
+                display: none;
+            }
+        }
+    }
+}

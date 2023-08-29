@@ -8,7 +8,7 @@
 
                 .txt {
                     @include inner();
-                    @include max-position_left();
+                    @include position_center();
                     color: $color-white;
 
                     h2 {
@@ -146,5 +146,51 @@
             }
         }
         
+    }
+}
+
+@media (max-width:768px) {
+    .main_sk {
+        .sk_slide {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .txt {
+                        @include position_left();
+
+                        h2 {
+                            font-size: 30px;
+                            line-height: 40px;
+                        }
+
+                        p {
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+                // .sk01 {
+                //     height: 500px;
+                // }
+                // .sk02 {
+                //     height: 500px;
+                // }
+                // .sk03 {
+                //     height: 500px;
+                // }
+            }
+
+            .swiper_button {
+                border-radius: 10px;
+                padding: 6px 8px;
+
+                &::before {
+                    height: 20px;
+                }
+
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
     }
 }

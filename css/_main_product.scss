@@ -181,3 +181,35 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .main_product {
+        overflow: hidden;
+        
+        .inner {
+            padding: 50px 20px;
+            .tit {
+                gap: 20px;
+                h3 {
+                    font-size: 36px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .product_slide {
+            .p_slide {
+                padding: 0;
+                width: 500px;
+                .list {
+                  
+                }
+
+            }
+
+        }
+    }
+}

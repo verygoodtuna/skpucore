@@ -167,3 +167,35 @@
     }
 
 }
+
+@media (max-width:768px) {
+    .main_global {
+        
+        &::after {
+            width: 100%;
+            height: calc(100% - 75%);
+        }
+
+        .video_box {
+            width: auto;
+            height: 100%;
+        }
+
+        .inner {
+            top: 4%;
+            left: 50%;
+            transform: translate(-50%, 0);
+
+            .tit {
+
+                h3 {
+                    font-size: 26px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

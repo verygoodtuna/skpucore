@@ -33,7 +33,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 250px;
+            gap: 200px;
 
             position: relative;
 
@@ -79,6 +79,48 @@
                 &:hover {
                     background: $color-red;
                     border: 1px solid transparent;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main_technical {
+        .video_box {
+            overflow: hidden;
+            video {
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        .inner {
+            top: 50%;
+            
+            .tit {
+                flex-direction: column;
+                text-align: center;
+                gap: 24px;
+
+                &::before {
+                    display: none;
+                }
+
+                h3 {
+                    font-size: 42px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+                }
+
+                a {
+                    margin: 0 auto;
+                    font-size: 14px;
+                    width: 50%;
                 }
             }
         }
