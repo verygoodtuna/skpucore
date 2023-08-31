@@ -55,7 +55,7 @@ $(function () {
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 6,
+                    slidesToShow: 1,
                     centerMode: true,
                     centerPadding: '50px',
                 }

@@ -218,7 +218,7 @@ img {
     z-index: 999;
   }
   .header .h_inner .gnb {
-    display: block;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -561,9 +561,10 @@ img {
     overflow: hidden;
   }
   .main_product .inner {
-    padding: 50px 20px;
+    padding: 100px 20px 0 20px;
   }
   .main_product .inner .tit {
+    flex-direction: column;
     gap: 20px;
   }
   .main_product .inner .tit h3 {
