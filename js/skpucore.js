@@ -3,6 +3,7 @@ $(function () {
     $('.main_box').fullpage({
         anchors:['main_sk', 'main_product', 'main_technical', 'main_customer', 'main_news', 'main_global', 'footer'],
         responsiveWidth: 700,
+        css3: false,
         onLeave: function (idx, nidx, dir) {
             $('.gnb li').eq(nidx - 1).addClass('on').siblings().removeClass('on');
             console.log(idx, nidx, dir);
@@ -25,6 +26,11 @@ $(function () {
             $(this).parent().siblings().find('.lnb').stop().slideUp();
         }
     });
+
+    $('.moblie_btn').on('click', function () {
+        $('.moblie_btn').toggleClass('on');
+        $('.gnb').toggleClass('on');
+    })
 
     const SkSlide = new Swiper ('.sk_slide', {
         loop: true,
@@ -57,7 +63,7 @@ $(function () {
                 settings: {
                     slidesToShow: 1,
                     centerMode: true,
-                    centerPadding: '50px',
+                    centerPadding: '15px',
                 }
             }
             

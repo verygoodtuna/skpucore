@@ -124,6 +124,10 @@
                 font-size: 14px;
                 font-weight: 300;
                 margin: 0 0 5px 0;
+
+                .tell {
+                    display: inline-block;
+                }
             }
 
             .copy {
@@ -136,13 +140,49 @@
 
 @media (max-width:768px) {
     .footer {
+        padding: 50px 0;
+
         .inner {
             flex-direction: column;
             padding: 0 20px;
 
+            &::before {
+                display: none;
+            }
+
             .company {
                 display: none;
             }
+
+            .about {
+                .impormation {
+                    justify-content: flex-start;
+                    margin: 0 0 16px 0;
+
+                    li {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+
+                .family_box {
+                    span {
+                        font-size: 12px;
+                        font-weight: 400;
+                        margin: 0 0 16px 0;
+                    }
+                }
+
+                .address {
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 14px;
+                }
+    
+            }
+
+          
+            
         }
     }
 }

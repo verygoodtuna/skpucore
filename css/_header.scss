@@ -187,6 +187,76 @@
             
         }
     }
+
+    .moblie_btn {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translate(0, -50%);
+        width: 25px;
+        height: 25px;
+        background: transparent;
+        z-index: 999;
+        overflow: hidden;
+
+        &.on::before {
+            transform: translate(-13px, 12px) rotate(45deg);
+        }
+
+        &.on::after {
+            transform: translate(-13px, -10px) rotate(-45deg);
+        }
+
+        &.on span::before {
+            transform: translate(-15px, 0);
+            background: transparent;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 100%;
+            height: 3px;
+            background: #fff;
+            transition: 0.5s;
+            border-radius: 10px;
+        }
+
+        span {
+            position: relative;
+            color: transparent;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 40%;
+                left: 0;
+                transform: translate(0, 0);
+                width: 100%;
+                height: 3px;
+                background: #fff;
+                border-radius: 10px;
+                transition: 0.5s;
+            }
+        }
+
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 100%;
+            height: 3px;
+            background: #fff;
+            transition: 0.5s;
+            border-radius: 10px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -223,27 +293,53 @@
                 width: 100%;
                 background: $color-dark;
 
+                &:hover .lnb {
+                    display: none;
+                    min-width: auto;
+                    height: auto;
+
+                    li {
+                        color: rgba(255, 255, 255, 0.8);
+                    }
+                }
+
                 &:hover::before {
                     height: 0;
                     top: 0;
                     height: 0;
                 }
 
+                &.on {
+                    display: block;
+                }
+
                 ul {
                     flex-direction: column;
-                    gap: 50px;
-                    padding: 100px 0 0 0;
+                    gap: 20px;
+                    padding: 150px 20px 0 20px;
 
                     li {
+                        width: 100%;
                         a {
                             line-height: 0;
                         }
 
                         .lnb {
                             position: static;
-                            top: 0;
-                            left: 0;
+                            transform: translate(0, 0);
+                            transition: none;
                             padding: 0;
+
+                            li {
+                                width: 100%;
+                                padding: 0;
+                                font-size: 14px;
+                                color: rgba(255, 255, 255, 0.1);
+
+                                a {
+                                    line-height: 14px;
+                                }
+                            }
                         }
 
                         .lnb.on {
