@@ -27,6 +27,15 @@ $(function () {
         }
     });
 
+    $('.gnb').on('wheel', function (e) {
+        if ($('.gnb .lnb').hasClass('on')) {
+            
+        }
+        else {
+            e.preventDefault();
+        }
+    })
+
     $('.moblie_btn').on('click', function () {
         $('.moblie_btn').toggleClass('on');
         $('.gnb').toggleClass('on');
@@ -35,9 +44,9 @@ $(function () {
     const SkSlide = new Swiper ('.sk_slide', {
         loop: true,
         speed: 1000,
-        // autoplay: {
-        //     delay: 3000,
-        // },
+        autoplay: {
+            delay: 3000,
+        },
         parallax: true,
         effect: "fade",
         navigation: {
@@ -63,7 +72,8 @@ $(function () {
                 settings: {
                     slidesToShow: 1,
                     centerMode: true,
-                    centerPadding: '15px',
+                    centerPadding: '25px',
+                    autoplay: true,
                 }
             }
             

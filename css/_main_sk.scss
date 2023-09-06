@@ -41,38 +41,46 @@
         }
 
         .swiper_button {
-            @include inner();
-            @include max-position_left();
-            top: 75%;
-            left: 17%;
-            width: auto;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid $color-white;
-            border-radius: 25px;
-            padding: 10px 15px;
+            position: absolute;
+            margin: 0 auto;
+            padding: 0 15px;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: $size-pc;
+            width: 100%;
             cursor: pointer;
-            display: flex;
-            gap: 20px;
 
             z-index: 998;
 
-            &::before {
-                content: "";
-                position: absolute;
-                top: 22%;
-                left: 50%;
-                width: 1px;
-                height: 30px;
-                background: rgba(255, 255, 255, 0.8);
-                z-index: 998;
-            }
+            .btn {
+                background: rgba(255, 255, 255, 0.1);
+                border: 1px solid $color-white;
+                border-radius: 25px;
+                padding: 8px 12px;
+                display: inline-flex;
+                gap: 20px;
+                position: relative;
 
-            i {
-                font-size: 30px;
-                font-weight: 300;
-                color: $color-white;
+                i {
+                    font-size: 26px;
+                    font-weight: 300;
+                    color: $color-white;
+    
+                    z-index: 998;
+                }
 
-                z-index: 998;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(0, -50%);
+                    width: 1px;
+                    height: 30px;
+                    background: rgba(255, 255, 255, 0.5);
+                    z-index: 998;
+                }
             }
         }
 
@@ -156,6 +164,7 @@
                 .swiper-slide {
                     .txt {
                         @include position_left();
+                        padding: 0 30px;
 
                         h2 {
                             font-size: 30px;
@@ -167,29 +176,33 @@
                         }
                     }
                 }
+                .sk01 {
+                    background: url(../imges/msk_01.png)no-repeat center center/cover;
+                }
+                .sk02 {
+                    background: url(../imges/msk_02.png)no-repeat 65% center/cover;
+                }
+                .sk03 {
+                    background: url(../imges/msk_03.png)no-repeat 64% center/cover;
+                }  
 
-                // .sk01 {
-                //     height: 500px;
-                // }
-                // .sk02 {
-                //     height: 500px;
-                // }
-                // .sk03 {
-                //     height: 500px;
-                // }
             }
 
             .swiper_button {
-                border-radius: 10px;
-                padding: 6px 8px;
+                padding: 6px 30px;
+                
+                .btn {
+                    border-radius: 10px;
 
-                &::before {
-                    height: 20px;
-                }
 
-                i {
-                    font-size: 20px;
-                }
+                    &::before {
+                        height: 20px;
+                    }
+    
+                    i {
+                        font-size: 20px;
+                    }
+                }    
             }
         }
     }
